@@ -1,0 +1,51 @@
+.container {
+
+    /* Flexbox */
+    display: flex;
+    /* or inline-flex */
+    flex-direction: column;
+  
+    /* Removes gaps on left and right of container */
+    padding: 0 !important;
+  
+  }
+  
+  #map {
+    /* Leaflet */
+    height: 100vh;
+    width: 100vw;
+    position:relative
+  }
+  
+  #search_btn {
+    z-index: 999;
+    position: absolute;
+    padding: 3px;
+    top: 50px; 
+    right: 50px;
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #searchterms {
+    z-index: 999;
+    position: absolute;
+    top: 50px; 
+    right: 150px;
+  }
+  
+
+  
+  /* #clear-btn {
+    z-index: 999;
+    position: absolute;
+    top: 60px; 
+    right: 20x; 
+    padding: 10px;
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  } */
