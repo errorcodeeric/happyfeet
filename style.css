@@ -1,51 +1,80 @@
 .container {
 
-    /* Flexbox */
-    display: flex;
-    /* or inline-flex */
-    flex-direction: column;
-  
-    /* Removes gaps on left and right of container */
-    padding: 0 !important;
-  
-  }
-  
-  #map {
-    /* Leaflet */
-    height: 100vh;
-    width: 100vw;
-    position:relative
-  }
-  
-  #search_btn {
-    z-index: 999;
-    position: absolute;
-    padding: 3px;
-    top: 50px; 
-    right: 50px;
-    background-color: #0074d9;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  #searchterms {
-    z-index: 999;
-    position: absolute;
-    top: 50px; 
-    right: 150px;
-  }
-  
+  /* Flexbox */
+  display: flex;
+  /* or inline-flex */
+  flex-direction: column;
 
-  
-  /* #clear-btn {
-    z-index: 999;
-    position: absolute;
-    top: 60px; 
-    right: 20x; 
-    padding: 10px;
-    background-color: #0074d9;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  } */
+  /* Removes gaps on left and right of container */
+  padding: 0 !important;
+
+}
+
+#booking_btn {
+  overflow-x: visible;
+}
+
+#map {
+  /* Leaflet */
+  height: 100vh;
+  width: 100vw;
+  position: relative
+}
+
+.bookingModal {
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search_btn {
+  z-index: 999;
+  position: fixed;
+  /* padding: 6px; */
+  bottom: 50px;
+  right: 30px;
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+
+  /* round the button */
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+.leaflet-container a {
+  color: aqua;
+  text-decoration: none;
+}
+
+#searchterms {
+  z-index: 999;
+  position: fixed;
+  bottom: 46px;
+  right: 70px;
+  width: 60vw;
+  border-radius: 20px;
+}
+
+
+#findme_btn {
+  z-index: 999;
+  position: fixed;
+  /* padding: 6px; */
+  bottom: 85px;
+  right: 30px;
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+
+  /* round the button */
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
