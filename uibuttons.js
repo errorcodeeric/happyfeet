@@ -30,3 +30,22 @@ searchBtn.addEventListener('click', async function(){
 let findmeBtn = document.getElementById('findme_btn')
 findmeBtn.addEventListener('click', locateUser)
 
+
+
+bookingbtn1.addEventListener('click', function(){
+    bookingName = "Happy Feet";
+    let bookingtime = document.getElementById('datepicker').value
+    let duration = document.getElementsByName('duration')
+    for(selection of duration){
+        if(selection.checked) {duration = selection.value};
+    }
+
+    let massageService = document.getElementsByName('massageService')
+    for(selection of massageService){
+        if(selection.checked) {massageService = selection.value};
+    }
+
+
+    console.log(bookingtime, duration, massageService )
+})
+

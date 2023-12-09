@@ -29,7 +29,8 @@ style="width: 60px; height: 60px"><br>
 <strong>Happy Feet</strong><br>
 Open 24hrs<p>
 <hr>
-<button type="button" class="btn-sm  btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button><p>
+<button type="button" id="booking_btn1" class="btn-sm  btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button><p>
+<script>let bookingbtn1 = document.getElementById('booking_btn1')</script>
 <a href="https://www.google.com/maps/dir/${lat},${lon}/${demoLoc1[0]},${demoLoc1[1]}/data=!4m2!4m1!3e2" class="btn-sm btn-primary">Directions</a>
 </div>`
 
@@ -40,9 +41,11 @@ style="width: 60px; height: 60px"><br>
 <strong>Unwind Foot Spa</strong><br>
 Closed<p>
 <hr>
+
+<!--
 <div class="btn-sm btn-primary id="booking_btn2">Book Now</div><p>
 <a href="https://www.google.com/maps/dir/${lat},${lon}/${demoLoc2[0]},${demoLoc2[1]}/data=!4m2!4m1!3e2" class="btn-sm btn-primary">Directions</a>
-
+-->
 </div>`;
 
 

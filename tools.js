@@ -7,12 +7,14 @@ function locateUser(){
 
 }
 
+  // Initialize Flatpickr date picker
+  flatpickr("#datepicker", {
+    enableTime: true, // Enable time selection
+    dateFormat: "D d M Y, h:iK", // Specify the date and time format
+    hourIncrement: 1, // increments of 1 hour only
+    minuteIncrement: 15,
+    stepping: 15, // increments of 15 minutes only
+    disableMobile: true
 
-  // Initialize Bootstrap Datepicker inline
-  $(document).ready(function(){
-   $('#datepicker').datepicker({
-     format: 'dd/mm/yyyy',
-     inline: true, // Display calendar inline
-     // Add any additional options or configurations here
-   });
- });
+    // Additional options or callbacks can be added here
+  });

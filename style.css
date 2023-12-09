@@ -1,7 +1,7 @@
 .container {
 
   /* Flexbox */
-  display: flex;
+  /* display: flex; */
   /* or inline-flex */
   flex-direction: column;
 
@@ -21,7 +21,7 @@
   position: relative
 }
 
-.bookingModal {
+.bookingModal, #timepicker {
   z-index: 999;
   display: flex;
   align-items: center;
@@ -61,6 +61,7 @@
 }
 
 
+
 #findme_btn {
   z-index: 999;
   position: fixed;
@@ -77,4 +78,11 @@
   width: 30px;
   height: 30px;
   border-radius: 100%;
+}
+
+
+#duration {
+  display: grid;
+  grid-template-columns: auto auto; /* Two columns */
+  gap: 10px; /* Gap between columns */
 }
