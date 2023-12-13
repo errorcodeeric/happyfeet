@@ -12,3 +12,11 @@ document.addEventListener("DOMContentLoaded", async function()
     
 
 })
+
+let bookingItem = {
+    bookingtime: "",
+    duration:"",
+    massageService: ""
+}
+
+let bookingHistory = [];

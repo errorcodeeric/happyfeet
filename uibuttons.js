@@ -47,5 +47,22 @@ bookingbtn1.addEventListener('click', function(){
 
 
     console.log(bookingtime, duration, massageService )
+
+    bookingItem ={
+        bookingtime: bookingtime,
+        duration: duration,
+        massageService: massageService
+    }
+
+    bookingHistory.push(bookingItem)
+
+    console.log(bookingHistory)
+
 })
 
+
+
+// customize marker
+// branding
+// make some customizations so it's not obviously leaflet
+// rating system
