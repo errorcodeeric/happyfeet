@@ -29,6 +29,9 @@
 <body>
 
     <div id="container bookingOverlay">
+
+
+
         <div class="modal bookingOverlay" id="bookingModal">
             <div class="modal-dialog bookingOverlay modal-vertical-centered modal-dialog-centered">
                 <div class="modal-content ">
@@ -36,14 +39,18 @@
                         <h5 class="modal-title">Booking for Happy Feet</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
+
                     <div class="modal-body">
                         <div class="container">
+
+
+
                             <label for="datepicker" class=" col-4"><strong>Date and Time:</strong></label> <br><input
                                 class="col-7" id="datepicker"><br>
 
                             <label for="duration" class=" col-4"><strong>Duration</strong></label>
                             <div class="col-7">
-                    
+
                                 <input type="radio" id="1hr" name="duration" value="60">
                                 <label for="1hr">1 hour</label>
 
@@ -51,14 +58,15 @@
                                 <label for="1.5hr">1.5 hours</label>
                             </div>
                             <div>
-                                <label for="serviceBooked" class=" col-4"><strong>Service</strong></label>   <div class="col-7">
-                    
+                                <label for="serviceBooked" class=" col-4"><strong>Service</strong></label>
+                                <div class="col-7">
+
                                     <input type="radio" id="footMassage" name="massageService" value="foot">
                                     <label for="footMassage">Foot Massage</label><br>
-                                    
+
                                     <input type="radio" id="bodyMassage" name="massageService" value="body">
                                     <label for="bodyMassage">Body Massage</label><br>
-                                    
+
                                 </div>
                             </div>
 
@@ -75,7 +83,23 @@
     </div>
     <div class="container">
 
-        <div id="map"></div>
+        <div id="map">
+            <nav class="navbar navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="footmarker.png" alt="" width="40" height="40" class="d-inline-block align-text-top">
+                        Foot Spa Finder
+                    </a>
+
+
+                </div>
+
+                <div id="userInfo"></div>
+            </nav>
+
+
+        </div>
+
 
     </div>
 
@@ -85,6 +109,11 @@
     <div class="mb-3">
         <input type="text" class="form-control" id="searchterms" placeholder="Search...">
     </div>
+
+    <div class="btn-sm btn-primary rounded-circle text-center" id="menu_btn"><i class="fa-solid fa-bars"></i>
+    </div>
+
+
     <div class="btn-sm btn-primary rounded-circle text-center" id="findme_btn"><i class="fas fa-location"></i>
     </div>
 

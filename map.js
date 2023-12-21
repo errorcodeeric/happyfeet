@@ -1,7 +1,13 @@
 let SGlatlong = [1.290270, 103.851959];
 
 
-let map = L.map('map').setView(SGlatlong, 13);
+let map = L.map('map', { zoomControl: false }).setView(SGlatlong, 13);
+
+var footMarker = L.icon({
+    iconUrl: 'footmarker.png',
+    iconSize: [60, 60], // size of the icon
+});
+
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -11,7 +17,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 function dropMarker(places) {
     for (i = 0; i < places.length; i++) {
-        L.marker([places[i].geocodes.main.latitude, places[i].geocodes.main.longitude]).addTo(map);
+        L.marker([places[i].geocodes.main.latitude, places[i].geocodes.main.longitude], { icon: footMarker }).addTo(map);
     }
 
 }
@@ -49,11 +55,11 @@ Closed<p>
 </div>`;
 
 
-    L.marker(demoLoc1).addTo(map)
+    L.marker(demoLoc1, { icon: footMarker }).addTo(map)
         .bindPopup(demoPopupContent1)
         .openPopup(); // Add a demo marker with a popup near user's location
 
-    L.marker(demoLoc2).addTo(map)
+    L.marker(demoLoc2, { icon: footMarker }).addTo(map)
         .bindPopup(demoPopupContent2) // Add a second marker for comparison
 
 
