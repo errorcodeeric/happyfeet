@@ -20,3 +20,9 @@ let bookingItem = {
 }
 
 let bookingHistory = [];
+
+let contactInfo = {
+    userName: "Ahn Jiao Shuang",
+    userEmail: "ahnjiaoshuang@gmail.com",
+    userMobile: 97696969
+}
