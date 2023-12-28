@@ -32,6 +32,53 @@
 
 <body>
 
+    <div class="card" id="bookingCard">
+        <h5 class="card-title" id="closeBookingBtn"><i class="fa-solid fa-x" style="color: #878787;"></i></h5>
+        <div class="card-body">
+            <h5 class="card-title my-4">Booking for Happy Feet</h5>
+
+            <hr class="my-4">
+
+            <h6 class="card-subtitle text-muted">Date and Time:</h6>
+            <input class="col-7" id="datepicker">
+
+            <hr class="my-4">
+
+
+
+            <h6 class="card-subtitle text-muted">Duration:</h6>
+            <div class="col-7">
+
+                <input type="radio" id="1hr" name="duration" value="60">
+                <label for="1hr">1 hour</label>
+                <p>
+
+                <input type="radio" id="1.5hr" name="duration" value="90">
+                <label for="1.5hr">1.5 hours</label>
+            </div>
+
+            <hr class="my-4">
+
+
+            <h6 class="card-subtitle text-muted">Service:</h6>
+                <div class="col-7">
+
+                    <input type="radio" id="footMassage" name="massageService" value="foot">
+                    <label for="footMassage">Foot Massage</label><br>
+
+                    <input type="radio" id="bodyMassage" name="massageService" value="body">
+                    <label for="bodyMassage">Body Massage</label><br>
+
+                </div>
+            
+
+
+           
+        </div>
+    </div>
+
+
+
     <div id="container bookingOverlay">
 
 
@@ -45,36 +92,7 @@
                     </div>
 
                     <div class="modal-body">
-                        <div class="container">
 
-
-
-                            <label for="datepicker" class=" col-4"><strong>Date and Time:</strong></label> <br><input
-                                class="col-7" id="datepicker"><br>
-
-                            <label for="duration" class=" col-4"><strong>Duration</strong></label>
-                            <div class="col-7">
-
-                                <input type="radio" id="1hr" name="duration" value="60">
-                                <label for="1hr">1 hour</label>
-
-                                <input type="radio" id="1.5hr" name="duration" value="90">
-                                <label for="1.5hr">1.5 hours</label>
-                            </div>
-                            <div>
-                                <label for="serviceBooked" class=" col-4"><strong>Service</strong></label>
-                                <div class="col-7">
-
-                                    <input type="radio" id="footMassage" name="massageService" value="foot">
-                                    <label for="footMassage">Foot Massage</label><br>
-
-                                    <input type="radio" id="bodyMassage" name="massageService" value="body">
-                                    <label for="bodyMassage">Body Massage</label><br>
-
-                                </div>
-                            </div>
-
-                        </div>
 
                     </div>
                     <div class="modal-footer">
@@ -106,8 +124,10 @@
 
         </div>
         <div class="card" id="userInfo">
-            <h5 class="card-title" id="closeCardBtn">X</h5>
+            <h5 class="card-title" id="closeCardBtn"><i class="fa-solid fa-x" style="color: #878787;"></i></h5>
             <div class="card-body">
+                <h5 class="card-title my-4">User Information</h5>
+
                 <div id="contactInfo">
 
                 </div>
@@ -161,9 +181,10 @@
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
     <script src="data.js"></script>
+    <script src="map.js"></script>
     <script src="tools.js"></script>
 
-    <script src="map.js"></script>
+
     <script src="uibuttons.js"></script>
     <script src="booking.js"></script>
 

@@ -21,7 +21,6 @@ function locateUser(){
 
   function displayContactInfo(){
     document.getElementById('contactInfo').innerHTML=`
-    <h5 class="card-title my-4">User Information</h5>
     <h6 class="card-subtitle mb-2 text-muted">Contact Information</h6>
     <div class="card-text">Name: ${contactInfo.userName}</div>
     <div class="card-text">Email: ${contactInfo.userEmail}</div>

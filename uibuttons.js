@@ -60,9 +60,16 @@ bookingbtn1.addEventListener('click', function(){
 
 })
 
+closeCardBtn.addEventListener('click', function(){
+    let card=document.getElementById('userInfo');
+    card.style.zIndex = '0';
+})
 
 
-// customize marker
-// branding
-// make some customizations so it's not obviously leaflet
+menu_btn.addEventListener('click', function(){
+    let card=document.getElementById('userInfo');
+    card.style.zIndex = '999';
+})
+
+
 // rating system

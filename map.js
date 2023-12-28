@@ -35,7 +35,9 @@ function demoMarker(lat, lon) {
 style="width: 60px; height: 60px"><br>
 <strong>Happy Feet</strong><br>
 Open 24hrs<p>
+<div id="fav_btn"><i class="fa-regular fa-star fa-xl"></i></div>
 <hr>
+
 <button type="button" id="booking_btn1" class="btn-sm  btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button><p>
 <script>let bookingbtn1 = document.getElementById('booking_btn1')</script>
 <a href="https://www.google.com/maps/dir/${lat},${lon}/${demoLoc1[0]},${demoLoc1[1]}/data=!4m2!4m1!3e2" class="btn-sm btn-primary">Directions</a>
@@ -62,6 +64,12 @@ Closed<p>
 
     L.marker(demoLoc2, { icon: footMarker }).addTo(map)
         .bindPopup(demoPopupContent2) // Add a second marker for comparison
+
+    // fav_btn.addEventListener('click', function () {
+    //     let fav = document.getElementById('fav_btn');
+    //     console.log(userFaves)
+    //     fav.innerHTML = `<i class="fa-solid fa-star fa-xl" style="color: #f2ea18;"></i>`
+    // })
 
 
 

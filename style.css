@@ -40,12 +40,11 @@ body {
   justify-content: center;
 }
 
-.bookingModal,
+#bookingCard,
 #timepicker {
   z-index: 999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+
 }
 
 #search_btn {
@@ -145,7 +144,7 @@ nav {
 
 }
 
-#userInfo {
+#userInfo1, #bookingCard {
   z-index: 999;
   position: absolute;
   top: 50%;
@@ -166,8 +165,10 @@ nav {
 
 }
 
-#closeCardBtn {
+#closeCardBtn, #closeBookingBtn {
   position: absolute;
   top: 7px; /* Adjust top position as needed */
   right: 14px; /* Adjust right position as needed */
+  cursor: pointer;
 }
+

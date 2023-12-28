@@ -26,3 +26,7 @@ let contactInfo = {
     userEmail: "ahnjiaoshuang@gmail.com",
     userMobile: 97696969
 }
+
+let userFaves = [
+    "Happy Feet"
+]
