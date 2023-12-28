@@ -9,8 +9,9 @@ var footMarker = L.icon({
 });
 
 
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+L.tileLayer('https://tile.jawg.io/d0dc7854-59fe-4841-bd7c-cd7a0d2f6a99/{z}/{x}/{y}{r}.png?access-token={accessToken}', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    accessToken: 'HxoqSeTTFzOW4bS5UF6SXPmOAVDzdaARLyiIHIzBgmNNTmrKlepLyUwbgxvyTPfy'
 }).addTo(map);
 
 

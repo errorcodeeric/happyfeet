@@ -1,12 +1,22 @@
+body {
+  overflow: hidden;
+  padding: 0% !important;
+  display: flex;
+  width: 100vw;
+
+
+}
+
 .container {
 
   /* Flexbox */
-  /* display: flex; */
+  display: flex;
   /* or inline-flex */
-  flex-direction: column;
+  /* flex-direction: column; */
+  width: 100vw;
 
   /* Removes gaps on left and right of container */
-  padding: 0 !important;
+  padding: 0% !important;
   align-items: center;
   justify-content: center;
 
@@ -18,9 +28,13 @@
 
 #map {
   /* Leaflet */
+  padding: 0% !important;
+  position: fixed;
+  top: 0;
+
   height: 100vh;
   width: 100vw;
-  position: relative
+  /* position: relative; */
   align-items: center;
   justify-content: center;
 }
@@ -54,6 +68,7 @@
 .leaflet-container a {
   color: aqua;
   text-decoration: none;
+  
 }
 
 #searchterms {
@@ -64,8 +79,6 @@
   width: 60vw;
   border-radius: 20px;
 }
-
-
 
 #findme_btn {
   z-index: 999;
@@ -103,8 +116,6 @@
   border-radius: 100%;
 }
 
-
-
 #duration {
   display: grid;
   grid-template-columns: auto auto;
@@ -132,15 +143,14 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   width: 400px; /* Set width to 400 pixels */
   height: 600px; /* Set height to 600 pixels */
   background-color: #fefff5;
-  color: white;
-  text-align: center;
-  /* line-height: 600px; Center content vertically */
-  font-size: 24px;
+
+
+
   border-radius: 20px;
   display: flex;
 
