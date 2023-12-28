@@ -130,9 +130,17 @@ nav {
   background-color: #d99058;
   background-image: linear-gradient(315deg, #d99058 0%, #f8de7e 74%);
   top: 30px;
-  height: 40px;
+  padding-top: 0px;
+  font-family: 'Pacifico'; 
   width: 100vw;
-  align-items: center;
+  height: 1.5rem;
+  align-items: middle;
+
+}
+
+.navbar-brand {
+  font-size: 1.5rem !important;
+
 
 }
 
@@ -155,4 +163,10 @@ nav {
   display: flex;
 
 
+}
+
+#closeCardBtn {
+  position: absolute;
+  top: 7px; /* Adjust top position as needed */
+  right: 14px; /* Adjust right position as needed */
 }
