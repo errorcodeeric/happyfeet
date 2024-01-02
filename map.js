@@ -1,6 +1,8 @@
 let SGlatlong = [1.290270, 103.851959];
 
 
+
+
 let map = L.map('map', { zoomControl: false }).setView(SGlatlong, 13);
 
 var footMarker = L.icon({
@@ -31,15 +33,20 @@ function demoMarker(lat, lon) {
 
     let demoPopupContent1 = `
     <div style="max-width: 85px;" class="text-center">
-<img src="happyfeetlogo.jpg"
-style="width: 60px; height: 60px"><br>
+<img src="happyfeetlogo.jpg" style="width: 60px; height: 60px"><br>
 <strong>Happy Feet</strong><br>
 Open 24hrs<p>
 <div id="fav_btn"><i class="fa-regular fa-star fa-xl"></i></div>
 <hr>
 
-<button type="button" id="booking_btn1" class="btn-sm  btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button><p>
-<script>let bookingbtn1 = document.getElementById('booking_btn1')</script>
+<button id="booking_btn1" class="btn-sm btn-primary">Book Now</button><p>
+
+<script>
+console.log("load ok");
+let booking_btn1 = document.getElementById("booking_btn1");
+booking_btn1.addEventListener("click", openBooking);
+</script>
+
 <a href="https://www.google.com/maps/dir/${lat},${lon}/${demoLoc1[0]},${demoLoc1[1]}/data=!4m2!4m1!3e2" class="btn-sm btn-primary">Directions</a>
 </div>`
 
@@ -96,6 +103,7 @@ function getUserLocation() {
 
     })
 }
+
 
 document.addEventListener('DOMContentLoaded', getUserLocation);
 

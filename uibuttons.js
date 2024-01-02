@@ -32,8 +32,14 @@ findmeBtn.addEventListener('click', locateUser)
 
 
 
-bookingbtn1.addEventListener('click', function(){
+function openBooking(){
+
+    console.log("click ok")
+    let card=document.getElementById('bookingCard');
+    card.style.zIndex = '999';
+    
     bookingName = "Happy Feet";
+
     let bookingtime = document.getElementById('datepicker').value
     let duration = document.getElementsByName('duration')
     for(selection of duration){
@@ -58,9 +64,16 @@ bookingbtn1.addEventListener('click', function(){
 
     console.log(bookingHistory)
 
+}
+
+let closeBookingBtn = document.getElementById('closeBookingBtn')
+closeBookingBtn.addEventListener('click', function(){
+    let card=document.getElementById('bookingCard');
+    card.style.zIndex = '0';
 })
 
-closeCardBtn.addEventListener('click', function(){
+let closeUserInfoBtn = document.getElementById('closeCardBtn')
+closeUserInfoBtn.addEventListener('click', function(){
     let card=document.getElementById('userInfo');
     card.style.zIndex = '0';
 })
@@ -70,6 +83,7 @@ menu_btn.addEventListener('click', function(){
     let card=document.getElementById('userInfo');
     card.style.zIndex = '999';
 })
+
 
 
 // rating system
