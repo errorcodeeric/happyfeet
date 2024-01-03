@@ -41,16 +41,14 @@ Open 24hrs<p>
 
 <button id="booking_btn1" class="btn-sm btn-primary">Book Now</button><p>
 
-<script>
-console.log("load ok");
-let booking_btn1 = document.getElementById("booking_btn1");
-booking_btn1.addEventListener("click", openBooking);
-</script>
+
 
 <a href="https://www.google.com/maps/dir/${lat},${lon}/${demoLoc1[0]},${demoLoc1[1]}/data=!4m2!4m1!3e2" class="btn-sm btn-primary">Directions</a>
 </div>`
 
     let demoPopupContent2 = `
+
+    
 <div style="max-width: 85px;" class="text-center">
 <img src="unwindfootspa.png"
 style="width: 60px; height: 60px"><br>
@@ -100,6 +98,11 @@ function getUserLocation() {
             .addTo(map); // 300m circle at user location
 
         demoMarker(userLat, userLon); // drop demo marker
+
+        console.log("load ok");
+        let booking_btn1 = document.getElementById("booking_btn1");
+        booking_btn1.addEventListener("click", openBooking);
+
 
     })
 }
