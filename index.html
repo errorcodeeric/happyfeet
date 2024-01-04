@@ -40,7 +40,7 @@
             <hr class="my-4">
 
             <h6 class="card-subtitle text-muted">Date and Time:</h6>
-            <input class="col-7" id="datepicker">
+            <input class="col-7" id="datepicker" name="date">
 
             <hr class="my-4">
 
@@ -63,17 +63,17 @@
             <h6 class="card-subtitle text-muted">Service:</h6>
                 <div class="col-7">
 
-                    <input type="radio" id="footMassage" name="massageService" value="foot">
+                    <input type="radio" id="footMassage" name="service" value="Foot Massage">
                     <label for="footMassage">Foot Massage</label><br>
 
-                    <input type="radio" id="bodyMassage" name="massageService" value="body">
+                    <input type="radio" id="bodyMassage" name="service" value="Body Massage">
                     <label for="bodyMassage">Body Massage</label><br>
 
                 </div>
             <hr class="my-4">
 
             <button type="button" class="btn btn-secondary" id="cancelBookingBtn">Cancel</button>
-            <button type="button" class="btn btn-primary" id="confirmBookingBtn">Confirm</button>
+            <button type="button" class="btn btn-primary" id="cfmBtn">Confirm</button>
 
 
            
@@ -118,9 +118,7 @@
 
 
                 <h6 class="card-subtitle mb-2 text-muted">Booking History</h6>
-                <div class="card-text">Name: Eric Ng</div>
-                <div class="card-text">Email: eric.nyh@icloud.com</div>
-                <div class="card-text">Number: 97693993</div>
+                <div id="bookingHistory"></div>
             </div>
         </div>
 

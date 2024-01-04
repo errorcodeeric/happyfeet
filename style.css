@@ -145,7 +145,7 @@ nav {
 
 }
 
-#userInfo1,
+#userInfo,
 #bookingCard {
   z-index: 0;
   position: absolute;
@@ -161,6 +161,7 @@ nav {
   /* Set height to 600 pixels */
   background-color: #fefff5;
 
+  overflow-y: scroll !important;
 
 
   border-radius: 20px;
@@ -177,4 +178,9 @@ nav {
   right: 14px;
   /* Adjust right position as needed */
   cursor: pointer;
+}
+
+#bookingHistory {
+  font-size: 0.8em; 
+
 }

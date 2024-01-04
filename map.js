@@ -99,9 +99,13 @@ function getUserLocation() {
 
         demoMarker(userLat, userLon); // drop demo marker
 
-        console.log("load ok");
+
         let booking_btn1 = document.getElementById("booking_btn1");
         booking_btn1.addEventListener("click", openBooking);
+
+        let cfmBtn = document.getElementById('cfmBtn')
+        cfmBtn.addEventListener('click', logBooking)
+
 
 
     })
