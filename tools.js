@@ -22,9 +22,9 @@ function locateUser(){
   function displayContactInfo(){
     document.getElementById('contactInfo').innerHTML=`
     <h6 class="card-subtitle mb-2 text-muted">Contact Information</h6>
-    <div class="card-text">Name: ${contactInfo.userName}</div>
-    <div class="card-text">Email: ${contactInfo.userEmail}</div>
-    <div class="card-text">Mobile: ${contactInfo.userMobile}</div>
+    <div class="card-text"><b>Name:</b> ${contactInfo.userName}</div>
+    <div class="card-text"><b>Email:</b> ${contactInfo.userEmail}</div>
+    <div class="card-text"><b>Mobile:</b> ${contactInfo.userMobile}</div>
 
     <hr class="my-4">
     
