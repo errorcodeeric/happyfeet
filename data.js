@@ -1,5 +1,5 @@
 let jsonBin = "https://api.jsonbin.io/v3/b/65662ba712a5d37659a03ed3";
-let googleAPIKey = "AIzaSyALOevQj2N-X2PcLgfuBRnK1yo7nyL9JBE"
+let googleAPIKey = ""
 
 async function getData() {
     let result = await axios.get(jsonBin);
