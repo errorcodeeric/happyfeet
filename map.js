@@ -36,7 +36,7 @@ function demoMarker(lat, lon) {
 <img src="happyfeetlogo.jpg" style="width: 60px; height: 60px"><br>
 <strong>Happy Feet</strong><br>
 Open 24hrs<p>
-<div id="fav_btn"><i class="fa-regular fa-star fa-xl"></i></div>
+
 <hr>
 
 <button id="booking_btn1" class="btn-sm btn-primary">Book Now</button><p>
